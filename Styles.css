@@ -3,10 +3,8 @@
 header   {
 	background-color: rgba(0,0,0,0.70);
 	padding-left: 19px;
-	padding-top: 10px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	padding-bottom: 10px;
+	padding-top: 12px;
+	padding-bottom: 12px;
 	padding-right: 19px;
  }
 .container  {
@@ -19,22 +17,245 @@ header   {
 	float: right;
 
 }
+.desktop_view ul li a {
+	color: #E8E8E8;
+	text-decoration: none;
+	padding-top: 13px;
+	padding-right: 43px;
+	padding-left: 43px;
+	padding-bottom: 13px;
+}
+.desktop_view {
+	margin-top: -4px;
+}
+
+.desktop_view ul li {
+	list-style-type: none;
+	display: inline-block;
+}
+.btn_red {
+	background-color: #FF6138;
+	margin-left: 16px;
+}
+.btn_green {
+	background-color: #00A388;
+}
+.hero_content .btn_red  {
+	color: #E8E8E8;
+	text-decoration: none;
+	padding-top: 13px;
+	padding-right: 43px;
+	padding-left: 43px;
+	padding-bottom: 13px;
+	margin-right: 32px;
+	margin-bottom: 32px;
+}
+
+
 .mobile_view {
 	display: none;
+	
 }
-.expand {
+body {
+	font-family: open-sans-condensed;
+	font-style: normal;
+	font-weight: 300;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+.hero_image {
+	background-image: url(images/hero-background.jpg);
+	height: 653px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center 0px;
+	padding-top: 19px;
+}
+main {
+	min-height: 800px;
+}
+hr {
+	border-style: solid;
+	border-color: #FFFFFF;
+	margin-right: 30px;
+	margin-top: -5px;
+	margin-bottom: 52px;
+	margin-left: 15px;
+}
+
+footer   {
+	height: 97px;
+	margin-top: 33px;
+}
+.social_icon {
+	float: left;
+	margin-top: 11px;
+
+
+}
+.float_left {
+  float: left;
+}
+.float_right {
+	float: right;
+}
+.availability {
+	margin-top: 7px;
+	margin-left: 15px;
+	color: #FFFF9D;
+}
+.clearfloat {
+	clear: both;
+}
+h1 {
+	font-weight: 400px;
+	font-size: 80px;
+	color: #FFFFFF;
+	line-height: 88px;
+	margin-left: 1%;
+	margin-bottom: 2%;
+	margin-right: 1%;
+}
+.col_large {
+	width: 31.3%;
+}
+.responsive_image {
+	width: 100%;
 	display: block;
 }
+
+
+
+
+
+
+
+
+.copyright {
+	float: right;
+	margin-top: 26px;
+	margin-left: 20px;
+	margin-right: 20px;
+
+}
+.social_image {
+	margin-right: 25px;
+}
+.hero_content {
+	margin-top: 25px;
+}
+.image_grid {
+	margin-top: 142px;
+	margin-bottom: 40px;
+}
+.col {
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-bottom: 2%;
+}
+.image_grid:after{
+	display: block;
+	clear: both;
+	content: "";
+	
+}
+.text_white_description {
+	color: #FFFFFF;
+	font-size: 30px;
+	margin-left: 16px;
+}
+.text_red {
+	color: #FF6138;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Mobile view*/
 @media (max-width: 400px){
 .mobile_view {
 	display: block;
+	float: right;
+	margin-top:6px; 
 }
 .desktop_view {
 	display: none;
+	text-align: right;
+	
 }
+.expand {
+	display: block;
+}
+header a img {
+	width: 83%;
+	height: 83%;
+	
+}
+
+.desktop_view ul li {
+	display: block;
+	margin-top: 25px;
+}
+.hero_image {
+	height: 526px;
+	padding-top: 19px;
+}
+h1 {
+	font-size: 42px;
+	line-height: 46px;
+	margin-bottom: 45px;
+}
+.hero_content img.float_left {
+	margin-left: 55px;
+}
+
+.hero_content {
+	text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
+	
+}
+.hero_content hr {
+	display: none;
+}
+
+#btn {
+	text-align: center;
+}
+	
+.col_xs {
+	width: 98%;
+	margin-top: 1%;
+	margin-right: 1%;
+	margin-bottom: 1%;
+	margin-left: 1%;
+}
+.hero_content  p {
+	font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
 
 
 }
@@ -44,14 +265,55 @@ header   {
 @media (min-width: 402px) and (max-width: 768px){
 .mobile_view   {
 	display: block;
+	float: right;
+	margin-top:8px;
 }
 .desktop_view {
 	display: none;
+	text-align: right;
+}
+.expand {
+	display: block;
+}
+.desktop_view ul li {
+	display: block;
+	margin-top: 25px;
+	
+}
+.hero_content {
+	margin-left: 25px;
+	margin-right: 25px;
+	margin-top: 25px;
+	margin-bottom: 0px;
+}
+.image_grid {
+	margin-top: 148px;
 }
 
 
+h1 {
+	font-size: 65px;
+	line-height: 68px;
+}
+.col_md {
+	width: 48%;
+	margin-top: 2%;
+	margin-right: 1%;
+	margin-bottom: 1%;
+	margin-left: 1%;
+}
+	.image_grid{
+		margin-top: 20%;
+	}
+
+
+
+
+
 
 
 }
-.desktop_view {
+.social_image {
+}
+.col_md {
 }
